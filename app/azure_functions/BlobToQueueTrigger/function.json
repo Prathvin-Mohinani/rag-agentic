@@ -1,0 +1,18 @@
+{
+  "bindings": [
+    {
+      "name": "blob",
+      "type": "blobTrigger",
+      "direction": "in",
+      "path": "rag-documents/unprocessed/actions/{name}",
+      "connection": "AzureWebJobsStorage"
+    },
+    {
+      "name": "msg",
+      "type": "queue",
+      "direction": "out",
+      "queueName": "rag-ingestion-queue",
+      "connection": "AzureWebJobsStorage"
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+rag_env/
+node.exe
+.venv/
+__pycache__/
+.env
+local.settings.json
